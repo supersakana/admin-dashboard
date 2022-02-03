@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+
 :root {
   --base-color-1: #1791d3;
   --base-color-2: #facb14;
@@ -13,12 +15,17 @@ body,
 html {
   height: 100%;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 .layout {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 4fr 0.3fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content"
@@ -70,7 +77,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .greeting-section {
@@ -86,12 +93,13 @@ i {
   border-radius: 50%;
 }
 
-.button-section {
+.btn-section {
+  margin-top: 18px;
   display: flex;
   gap: 20px;
 }
 
-.button-section button {
+.btn-section button {
   width: 95px;
   font-size: 1rem;
   padding: 10px 20px;
@@ -101,12 +109,57 @@ i {
   border-radius: 20px;
   color: #ffffff;
   background-color: var(--base-color-1);
+  transition: transform 0.1s ease-in;
+}
+
+.btn-section button:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+  background-color: #16a6f4;
 }
 
 /* Sidebar Styles */
 .sidebar {
   grid-area: sidebar;
   background-color: var(--base-color-1);
+  color: #ffffff;
+}
+
+.dashboard {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.fa-tachometer-alt {
+  font-size: 2.3rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 20px 20px;
+}
+
+.nav li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.nav i {
+  font-size: 1rem;
+}
+
+.nav a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid white;
 }
 
 /* Content Styles */
