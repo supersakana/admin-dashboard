@@ -3,6 +3,8 @@
 :root {
   --base-color-1: #1791d3;
   --base-color-2: #facb14;
+  --background-1: #e2e8ee;
+  --background-2: #ffffff;
 }
 
 * {
@@ -25,7 +27,7 @@ h1 {
 .layout {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 0.5fr 3fr 0.3fr;
+  grid-template-rows: 0.3fr 3fr 0.1fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content"
@@ -40,8 +42,8 @@ i {
 /* Header Styles */
 .header {
   grid-area: header;
-  background-color: #ffffff;
-  padding: 20px 50px;
+  background-color: var(--background-2);
+  padding: 15px 50px;
 }
 
 .header-top {
@@ -50,7 +52,7 @@ i {
 }
 
 .search-bar {
-  background-color: #e2e8ef;
+  background-color: var(--background-1);
   outline: none;
   border: none;
   border-radius: 20px;
@@ -65,10 +67,14 @@ i {
   align-items: center;
 }
 
+.zac {
+  background: url(admin-img/profile.png) no-repeat center;
+  background-size: cover;
+}
+
 .profile-one {
   width: 50px;
   height: 50px;
-  background-color: var(--base-color-2);
   border-radius: 50%;
   margin: 0px 20px;
 }
@@ -171,6 +177,10 @@ i {
   padding: 10px;
 }
 
+.content-title {
+  font-size: 1.2rem;
+}
+
 .all-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -209,12 +219,69 @@ i {
   font-size: 0.8rem;
 }
 
-.right-content {
-  background-color: #b6b5b5;
+.announcements h5 {
+  margin-top: 10px;
+}
+
+.announcements p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.announcements hr {
+  width: 100%;
+  margin: auto;
+  height: 1px;
+  background-color: #cdcdcd;
+  border: none;
+}
+
+.right-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.trending-profile {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.user-text {
+  color: #606060;
+}
+
+.trend-text {
+  font-size: 0.8rem;
 }
 
 /* Footer Styles */
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: footer;
   background-color: #414141;
+  color: #ffffff;
+}
+
+.footer i {
+  color: #ffffff;
+}
+
+.user-1 {
+  background: url(admin-img/costa.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.user-2 {
+  background: url(admin-img/mountain.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.user-3 {
+  background: url(admin-img/sakura.jpg) no-repeat center;
+  background-size: cover;
 }
