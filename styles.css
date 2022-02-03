@@ -25,7 +25,7 @@ h1 {
 .layout {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr 0.3fr;
+  grid-template-rows: 0.5fr 3fr 0.3fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content"
@@ -165,7 +165,52 @@ i {
 /* Content Styles */
 .content {
   grid-area: content;
-  background-color: #717171;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  background-color: #e2e8ef;
+  padding: 10px;
+}
+
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-left: var(--base-color-2) 8px solid;
+}
+
+.card-text h4 {
+  margin-bottom: 8px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card i {
+  font-size: 1rem;
+}
+
+.card i:hover {
+  cursor: pointer;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+.right-content {
+  background-color: #b6b5b5;
 }
 
 /* Footer Styles */
