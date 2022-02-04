@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
 
 :root {
-  --base-color-1: #1791d3;
-  --base-color-2: #facb14;
+  --base-color-1: #121fa7;
+  --base-color-2: #ffcc00;
   --background-1: #e2e8ee;
   --background-2: #ffffff;
 }
@@ -27,7 +27,7 @@ h1 {
 .layout {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 0.3fr 3fr 0.1fr;
+  grid-template-rows: 0.3fr 4fr 0.1fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content"
@@ -37,6 +37,10 @@ h1 {
 i {
   font-size: 25px;
   margin: 10px;
+}
+
+i:hover {
+  cursor: pointer;
 }
 
 /* Header Styles */
@@ -99,6 +103,10 @@ i {
   border-radius: 50%;
 }
 
+.profile-one:hover,
+.profile-two:hover {
+  cursor: pointer;
+}
 .btn-section {
   margin-top: 18px;
   display: flex;
@@ -136,6 +144,10 @@ i {
   display: flex;
   align-items: center;
   margin-top: 15px;
+}
+
+.dashboard h1 {
+  cursor: pointer;
 }
 
 .fa-tachometer-alt {
@@ -196,10 +208,24 @@ i {
   background-color: #ffffff;
   border-radius: 8px;
   border-left: var(--base-color-2) 8px solid;
+  box-shadow: 2px 2px 4px #c2c2c2;
+  transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card-text h4 {
   margin-bottom: 8px;
+}
+
+.card-text h4:hover {
+  cursor: pointer;
+}
+
+.card-text p {
+  color: #606060;
 }
 
 .card-icons {
@@ -223,9 +249,14 @@ i {
   margin-top: 10px;
 }
 
+.announcements h5:hover {
+  cursor: pointer;
+}
+
 .announcements p {
   font-size: 0.8rem;
   margin-bottom: 10px;
+  color: #606060;
 }
 
 .announcements hr {
@@ -241,12 +272,17 @@ i {
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
+  box-shadow: 2px 2px 4px #c2c2c2;
 }
 
 .trending-profile {
   display: flex;
   align-items: center;
   margin: 20px 0px;
+}
+
+.user:hover {
+  cursor: pointer;
 }
 
 .user-text {
@@ -263,7 +299,7 @@ i {
   align-items: center;
   justify-content: center;
   grid-area: footer;
-  background-color: #414141;
+  background-color: #606060;
   color: #ffffff;
 }
 
