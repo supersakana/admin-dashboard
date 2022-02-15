@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 :root {
   --base-color-1: #09148a;
-  --base-color-2: #ca0202;
-  --background-1: #e2e8ee;
-  --background-2: #ffffff;
+  --base-color-2: #39d353;
+  --background-1: #22272d;
+  --background-2: #2c333a;
 }
 
 * {
@@ -17,7 +17,8 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
   grid-template-areas:
     "sidebar header"
     "sidebar content"
-    "footer footer";
+    "sidebar footer";
 }
 
 i {
@@ -48,6 +49,7 @@ i:hover {
   grid-area: header;
   background-color: var(--background-2);
   padding: 15px 50px;
+  color: #ccd9e5;
 }
 
 .header-top {
@@ -63,6 +65,7 @@ i:hover {
   flex: 1;
   padding: 5px;
   max-width: 75%;
+  color: #ffffff;
 }
 
 .profile-section {
@@ -121,21 +124,22 @@ i:hover {
   border: none;
   outline: none;
   border-radius: 20px;
-  color: #ffffff;
-  background-color: var(--base-color-1);
+  color: #ccd9e5;
+  background-color: #29953b;
   transition: transform 0.1s ease-in;
 }
 
 .btn-section button:hover {
   cursor: pointer;
   transform: scale(0.98);
-  background-color: #16a6f4;
+  background-color: #06a721;
 }
 
 /* Sidebar Styles */
 .sidebar {
   grid-area: sidebar;
-  background-color: var(--base-color-1);
+  background-color: #2c333a;
+  border-right: 1px #ffffff solid;
   color: #ffffff;
 }
 
@@ -185,12 +189,14 @@ i:hover {
   grid-area: content;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
-  background-color: #e2e8ef;
+  background-color: var(--background-1);
   padding: 10px;
 }
 
 .content-title {
+  margin: 15px 0px;
   font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .all-cards {
@@ -205,10 +211,10 @@ i:hover {
   justify-content: space-between;
   margin: 10px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: var(--background-2);
   border-radius: 8px;
-  border-left: var(--base-color-2) 8px solid;
-  box-shadow: 2px 2px 4px #c2c2c2;
+  border-left: var(--base-color-2) 5px solid;
+  box-shadow: 2px 2px 4px #1b1b1b;
   transition: transform 0.2s ease-in;
 }
 
@@ -218,6 +224,7 @@ i:hover {
 
 .card-text h4 {
   margin-bottom: 8px;
+  color: #ffffff;
 }
 
 .card-text h4:hover {
@@ -225,12 +232,13 @@ i:hover {
 }
 
 .card-text p {
-  color: #606060;
+  color: #ccd9e5;
 }
 
 .card-icons {
   display: flex;
   justify-content: flex-end;
+  color: #ccd9e5;
 }
 
 .card i {
@@ -247,6 +255,7 @@ i:hover {
 
 .announcements h5 {
   margin-top: 10px;
+  color: #ffffff;
 }
 
 .announcements h5:hover {
@@ -256,23 +265,23 @@ i:hover {
 .announcements p {
   font-size: 0.8rem;
   margin-bottom: 10px;
-  color: #606060;
+  color: #ccd9e5;
 }
 
 .announcements hr {
   width: 100%;
   margin: auto;
   height: 1px;
-  background-color: #cdcdcd;
+  background-color: #ccd9e5;
   border: none;
 }
 
 .right-card {
-  background-color: #ffffff;
+  background-color: var(--background-2);
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 2px 2px 4px #c2c2c2;
+  box-shadow: 2px 2px 4px #1b1b1b;
 }
 
 .trending-profile {
@@ -286,11 +295,12 @@ i:hover {
 }
 
 .user-text {
-  color: #606060;
+  color: #ccd9e5;
 }
 
 .trend-text {
   font-size: 0.8rem;
+  color: #ffffff;
 }
 
 /* Footer Styles */
@@ -299,7 +309,8 @@ i:hover {
   align-items: center;
   justify-content: center;
   grid-area: footer;
-  background-color: #606060;
+  background-color: var(--background-1);
+  border-top: 1px solid #ffffff;
   color: #ffffff;
 }
 
