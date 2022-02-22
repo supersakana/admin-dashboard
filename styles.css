@@ -124,15 +124,15 @@ i:hover {
   border: none;
   outline: none;
   border-radius: 20px;
-  color: #ccd9e5;
-  background-color: #29953b;
+  color: #ffffff;
+  background-color: #29a93f;
   transition: transform 0.1s ease-in;
 }
 
 .btn-section button:hover {
   cursor: pointer;
   transform: scale(0.98);
-  background-color: #06a721;
+  background-color: #03c423;
 }
 
 /* Sidebar Styles */
@@ -219,7 +219,7 @@ i:hover {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 .card-text h4 {
